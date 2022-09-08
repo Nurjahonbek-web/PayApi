@@ -1,0 +1,15 @@
+.top-wrapper{
+    background-color: $color-gray;
+}
+.header{
+    padding: 4rem 0;
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    &__btn{
+        @include responsive(phone){
+            display: none !important;
+        }
+    }
+}

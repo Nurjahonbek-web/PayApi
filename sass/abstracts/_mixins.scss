@@ -1,0 +1,23 @@
+@mixin small-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: $text-fonts;
+    letter-spacing: -0.14px;
+    color: $color-juan-blue;
+    line-height: 1.38;
+
+}
+@mixin responsive($breakpoint) {
+    @if $breakpoint == laptop {
+        @media only screen and (max-width:1200px){@content}
+    };
+    @if $breakpoint == big-table {
+        @media only screen and (max-width:992px){@content}
+    };
+    @if $breakpoint == table {
+        @media only screen and (max-width:768px){@content}
+    };
+    @if $breakpoint == phone {
+        @media only screen and (max-width:576px){@content}
+    };
+}
