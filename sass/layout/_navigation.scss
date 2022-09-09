@@ -15,7 +15,10 @@
         line-height: 1.16;
         color:$color-juan-blue;
         filter: opacity(70%);
-
+        transition: all ease 2s;
+    }
+    .sitenav li:hover{
+        transform: scale(1.2);
     }
 }
 
